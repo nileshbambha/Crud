@@ -1,0 +1,7 @@
+<div class="main"> 
+    {{ data.title }}<br/> 
+    {{ data.description }}<br/> 
+    <a href="{% url  'delete' data.id %}">delete</a>
+    <a href="{% url  'update' data.id %}">update</a>
+  
+</div> 

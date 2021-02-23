@@ -1,0 +1,15 @@
+<html>
+    <title> Retrieve </title>
+    <body>
+        <div class="main"> 
+            <a href="create"> Create</a><br/><br/><br/>
+            {% for data in dataset %}
+            <a href="{% url  'detail' data.id %}">{{ data.title }}</a><br/> 
+            {{ data.description }}<br/> 
+            <hr/> 
+        
+            {% endfor %} 
+            
+        </div> 
+    </body>
+</html>
